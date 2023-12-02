@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    -->
+    <style>
+        body{
+    width: 1000px;
+    height: 1000px;
+    }
+        @keyframes moveImage {
+        0% {
+            transform: translateX(0px) translateY(0px);
+           
+        }
+        25% {
+            transform: translateX(0) translateY(1000px);
+        }
+        50% {
+            transform: translateX(1000px) translateY(0);
+        }
+        75% {
+            transform: translateX(999px) translateY(999px);
+        }
+        100% {
+            transform: translateX(0) translateY(0);
+        }
+}
+
+
+        .moving-image {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            animation: moveImage 4s linear infinite; /* Adjust the duration as needed */
+            background-size: cover;
+        }
+    </style>
+    <title>Moving Image Animation</title>
+</head>
+<body>
+
+<div class="moving-image"><img src="Avocado.jpg" alt="Avocado picture"></div>
+
+</body>
+</html>
+
+
